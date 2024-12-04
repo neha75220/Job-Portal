@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apparant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="container ">
+        <nav class="navbar backgroundImg">
+
+            <div class="logo">
+                <img src="./images/onlineLogo.png" alt="">
+            </div>
+
+            <ul id="sidemenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="home backgroundImg">
+
+            <div class="home-inner">
+                <div>
+                    <h1>Front End Developer</h1>
+                </div>
+                <div class="span-box">
+                    <span class="span"><i class="fa-regular fa-clock"></i>
+                        <h3>Full Time</h3>
+                    </span><span class="span"><i class="fa-solid fa-location-dot"></i>
+                        <h3>Noida</h3>
+                    </span>
+                </div>
+
+
+            </div>
+            <div class="homeimg imghome">
+                <img src="./images/home.png" alt="gg">
+            </div>
+        </div>
+    </header>
+    <!-- About section -->
+
+    <div class="about">
+        <div class="jobdex">
+            <h1>Job Description</h1>
+            <ul>
+                <li>Collaborate with clients and designers to create the look and design of a website. </li>
+                <li>Write clean, efficient, and maintainable code using HTML, CSS, and JavaScript </li>
+                <li>Test websites for ease of use, speed, and other quality factors.</li>
+                <li>Troubleshoot and debug issues as they arise</li>
+                <li> Optimize designs for speed and usability on various platforms.</li>
+                <li> Work with back-end developers to integrate UI components with APIs and databases.
+                </li>
+                <li>Collaborate with other team members, including designers, marketers, and product managers</li>
+                <li>Keep up with the latest front-end frameworks and libraries.
+                </li>
+
+            </ul>
+        </div>
+        <div class="jobDesImg">
+            <img src="./images/jobDes.png">
+        </div>
+    </div>
+    <hr>
+    <!-- about section end -->
+    <!-- services section -->
+    <div class="main_services">
+        <div class="services">
+            <main>
+                <img src="./images/img1.webp" class="slider" alt="">
+                <img src="./images/img2.jpg" class="slider" alt="">
+                <img src="./images/img4.webp" class="slider" alt="">
+                <img src="./images/img3.jpg" class="slider" alt="">
+
+            </main>
+            <div class="nav">
+                <button onclick="goPrev()">Prev</button>
+                <button onclick="goNext()">Next</button>
+            </div>
+
+        </div>
+        <div class="services_description">
+            <h1>Services</h1>
+            <p>Get a Professional Web Designing Services in Noida
+                Web design
+                vision
+                Vision
+                The vision of CSS Founder is 'Website for Everyone' which means that from India to the US, any
+                individual, rich or poor, irrespective of their background, business & class should have a website.
+
+                CSS Founder Pvt ltd is working as the best website designing company in Noida, where your search will
+                end here and you will walk with a modern, unique, and trendy website that gives you potential clients
+                and leads in the industry. You are at the right place, we deliver cutting-edge websites which perform
+                well.</p>
+                <button >Apply</button>
+                <p id="para">We are here for you only, Hope we meet soon</p>
+
+        </div>
+
+    </div>
+
+    <hr>
+    <!-- services section End -->
+    <div class="contact">
+        <div class="contact_1">
+        <img src="./images/onlineLogo.png" alt="gg">
+        <p>Have an idea but not sure where to start?</p>
+        <button>Book a Consultation</button>
+    </div>
+    <div class="contact_2">
+        <div class="contact_part">
+            <h3>Services</h3>
+            <ul>
+                <li>UX Audits</li>
+                <li>Design Strategy</li>
+                <li>Product Design</li>
+                <li>Branding</li>
+                <li>Design Sprint</li>
+                <li>MVP Development</li>
+                <li>Java Development </li>
+            </ul>
+        </div>
+        <div class="contact_part">
+            <h3>Process</h3>
+            <ul>
+                <li>Understand</li>
+                <li>Define</li>
+                <li>Prototype</li>
+                <li>Build</li>
+                <li>Deploy</li>
+                <li>Improve</li>
+            </ul>
+        </div>
+        <div class="contact_part">
+            <h3>
+                Company
+            </h3>
+            <ul>
+                <li>Career</li>
+                <li>Our Work</li>
+                <li>Contact us</li>
+                <li>Book a Consultation</li>
+            </ul>
+        </div>
+
+    </div>
+    </div>
+    <footer>
+        <p class="footer-center backgroundImg">||Copyright &copy; 2026 www.apparantServices.com All rights reserved||</p>
+    </footer>
+    <script src="https://kit.fontawesome.com/e49810fb51.js" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+
+<script>
+      var sidemenu= document.getElementById("sidemenu");
+
+function openmenu(){
+    sidemenu.style.right= '0'
+}
+function closemenu(){
+    sidemenu.style.right= '-200px'
+}
+</script>
+</body>
+
+</html>
